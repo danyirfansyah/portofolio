@@ -1,5 +1,3 @@
-// https://youtu.be/sUKptmUVIBM?si=aODgFSQAGGwM7ocD&t=10759
-
 "use client";
 
 import { useRef } from "react";
@@ -27,7 +25,7 @@ export default function Project({ title, description, tags, imageUrl }:ProjectPr
             scale: scrollYProgress,
             opacity: scrollYProgress,
         }}
-        className="group mb-3 sm:mb-8 last:mb-0 even:pl-8"
+        className="group mb-3 sm:mb-8 last:mb-0"
     >
         
         <section 

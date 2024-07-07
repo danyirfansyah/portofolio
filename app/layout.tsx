@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
   title: "Dany Irfansyah | Personal Portfolio",
-  description: 'Dany is a front-end developer with 1 years of experience.',
+  description: 'Dany is a front-end developer with < 1 years of experience.',
 };
 
 export default function RootLayout({
@@ -15,7 +15,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className="!scroll-smooth">
       <body className={`${inter.className}
       bg-gray-50 text-gray-950
       relative h-[5000px] pt-28 sm:pt-36`}>
