@@ -5,6 +5,8 @@ import SectionHeading from './section-heading'
 import { motion } from 'framer-motion'
 
 export default function About() {
+  
+
   return (
     <motion.section className="mb-28 max-w-[45rem] text-center leading-8 sm:mb-40 scroll-mt-28"
     initial= {{ opacity: 0, y: 100 }}
@@ -14,29 +16,13 @@ export default function About() {
     
     <SectionHeading>About me</SectionHeading>
     <p className="mb-3">
-        After graduating with a degree in{" "}
-        <span className="font-medium">Accounting</span>, I decided to pursue my
-        passion for programming. I enrolled in a coding bootcamp and learned{" "}
-        <span className="font-medium">full-stack web development</span>.{" "}
-        <span className="italic">My favorite part of programming</span> is the
-        problem-solving aspect. I <span className="underline">love</span> the
-        feeling of finally figuring out a solution to a problem. My core stack
-        is{" "}
-        <span className="font-medium">
-          React, Next.js, Node.js, and MongoDB
-        </span>
-        . I am also familiar with TypeScript and Prisma. I am always looking to
-        learn new technologies. I am currently looking for a{" "}
-        <span className="font-medium">full-time position</span> as a software
-        developer.
+    I am a passionate <span className="italic">Front-End Developer</span> with a strong dedication to creating engaging and user-friendly web interfaces. 
+    With a keen eye for detail and a commitment to continuous learning, I specialize in HTML, CSS, JavaScript, and modern frameworks like React and Vue.js. 
+    My goal is to build seamless, responsive, and visually appealing web applications that provide an exceptional user experience. 
+    I thrive in collaborative environments and enjoy working closely with designers and back-end developers to bring creative ideas to life.
     </p>
     <p>
-    <span className="italic">When I'm not coding</span>, I enjoy playing
-        video games, watching movies, and playing with my dog. I also enjoy{" "}
-        <span className="font-medium">learning new things</span>. I am currently
-        learning about{" "}
-        <span className="font-medium">history and philosophy</span>. I'm also
-        learning how to play the guitar.
+      When im not <span className="italic">Coding</span>, i enjoy Playing Video Games, Watching Movies, and Exploring the great outdoors.
     </p>
   </motion.section>
   )
