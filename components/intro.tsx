@@ -6,22 +6,12 @@ import { motion, spring} from "framer-motion";
 import Link from "next/link";
 import { BsArrowRight, BsLinkedin, BsGithub } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
-import { useActiveSectionContext } from "@/context/active-section-context";
-import { useInView } from 'react-intersection-observer'
+import { useSectionInView } from "@/lib/hooks";
 
 export default function Intro() {
-        const { ref, inView } = useInView({
-          threshold: 0.5,
-        });
-        const { setActiveSection } = useActiveSectionContext();
-      
-        useEffect(() => {
-          if (inView) {
-            setActiveSection('Home');
-          }
-        }, [inView, setActiveSection]);
-
-  return (
+    const { ref } = useSectionInView("Home", 0.5);
+    
+    return (
     <section 
     ref={ref}
     id="home" 
